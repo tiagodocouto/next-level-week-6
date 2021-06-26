@@ -12,8 +12,8 @@ defmodule NextLevelWeekWeb.Router do
 
   scope "/api" do
     pipe_through :api
-    forward "/graphql", Absinthe.Plug, schema: NextLevelWeek.Schema
-    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: NextLevelWeek.Schema
+    forward "/graphql", Absinthe.Plug, schema: NextLevelWeekWeb.Schema
+    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: NextLevelWeekWeb.Schema
   end
 
   if Mix.env() in [:dev, :test] do

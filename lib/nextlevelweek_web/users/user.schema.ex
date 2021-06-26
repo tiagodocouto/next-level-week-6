@@ -1,6 +1,6 @@
-defmodule NextLevelWeekWeb.Schema.Types.User do
+defmodule NextLevelWeekWeb.Schema.User do
   use Absinthe.Schema.Notation
-  import_types NextLevelWeekWeb.Schema.Types.UUID4
+  import_types NextLevelWeekWeb.Custom.UUID4
 
   @desc "User Schema"
   object :user do
