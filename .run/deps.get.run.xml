@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="deps.get" type="MixRunConfigurationType" factoryName="Elixir Mix">
-    <module name="nextlevelweek" />
-    <mix>
-      <argument>deps.get</argument>
-    </mix>
-    <module name="nextlevelweek" />
-    <module-filters inherit-application-module-filters="true" />
-    <method v="2" />
-  </configuration>
+    <configuration default="false" name="deps.get" type="MixRunConfigurationType" factoryName="Elixir Mix">
+        <module name="nextlevelweek"/>
+        <mix>
+            <argument>deps.get</argument>
+        </mix>
+        <module name="nextlevelweek"/>
+        <module-filters inherit-application-module-filters="true"/>
+        <method v="2"/>
+    </configuration>
 </component>

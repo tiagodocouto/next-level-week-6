@@ -12,10 +12,10 @@ config :nextlevelweek,
 config :nextlevelweek,
        NextLevelWeekWeb.Endpoint,
        http: [
-	       port: 4000
+         port: 4000
        ],
        live_reload: [
-	       interval: 100
+         interval: 100
        ],
        debug_errors: true,
        code_reloader: true,
@@ -27,3 +27,17 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 config :phoenix, :plug_init_mode, :runtime
+
+config :git_hooks,
+  auto_install: true,
+  verbose: true,
+  hooks: [
+    pre_commit: [
+      tasks: [
+        {:cmd, "mix format"},
+        {:cmd, "mix hex.outdated"},
+        {:cmd, "mix test --color"},
+        {:cmd, "echo 'success!'"}
+      ]
+    ]
+  ]

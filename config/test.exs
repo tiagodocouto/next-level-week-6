@@ -11,7 +11,7 @@ config :nextlevelweek,
 config :nextlevelweek,
        NextLevelWeekWeb.Endpoint,
        http: [
-	       port: 4002
+         port: 4002
        ],
        server: false
 

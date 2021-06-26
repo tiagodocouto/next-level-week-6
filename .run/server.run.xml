@@ -1,20 +1,20 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="server" type="MixRunConfigurationType" factoryName="Elixir Mix">
-    <module name="nextlevelweek" />
-    <mix>
-      <argument>phx.server</argument>
-    </mix>
-    <module name="nextlevelweek" />
-    <module-filters inherit-application-module-filters="true" />
-    <method v="2" />
-  </configuration>
-  <configuration default="false" name="phx.server" type="MixRunConfigurationType" factoryName="Elixir Mix">
-    <module name="nextlevelweek" />
-    <mix>
-      <argument>phx.server</argument>
-    </mix>
-    <module name="nextlevelweek" />
-    <module-filters inherit-application-module-filters="true" />
-    <method v="2" />
-  </configuration>
+    <configuration default="false" name="server" type="MixRunConfigurationType" factoryName="Elixir Mix">
+        <module name="nextlevelweek"/>
+        <mix>
+            <argument>phx.server</argument>
+        </mix>
+        <module name="nextlevelweek"/>
+        <module-filters inherit-application-module-filters="true"/>
+        <method v="2"/>
+    </configuration>
+    <configuration default="false" name="phx.server" type="MixRunConfigurationType" factoryName="Elixir Mix">
+        <module name="nextlevelweek"/>
+        <mix>
+            <argument>phx.server</argument>
+        </mix>
+        <module name="nextlevelweek"/>
+        <module-filters inherit-application-module-filters="true"/>
+        <method v="2"/>
+    </configuration>
 </component>

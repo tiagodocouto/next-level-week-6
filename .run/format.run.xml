@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-    <configuration default="false" name="hex.outdated" type="MixRunConfigurationType" factoryName="Elixir Mix">
+    <configuration default="false" name="format" type="MixRunConfigurationType" factoryName="Elixir Mix">
         <module name="nextlevelweek"/>
         <mix>
-            <argument>hex.outdated</argument>
+            <argument>format</argument>
         </mix>
         <module name="nextlevelweek"/>
         <module-filters inherit-application-module-filters="true"/>
