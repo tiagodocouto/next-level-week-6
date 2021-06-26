@@ -8,4 +8,11 @@ defmodule NextLevelWeekWeb.Schema.User do
     field :name, non_null(:string)
     field :email, non_null(:string)
   end
+
+  @desc "Create User Schema"
+  input_object :create_user_input do
+    field :name, non_null(:string), description: "USER NAME"
+    field :email, non_null(:string), description: "USER EMAIL"
+    field :password, non_null(:string), description: "USER PASSWORD"
+  end
 end

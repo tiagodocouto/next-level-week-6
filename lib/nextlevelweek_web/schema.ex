@@ -3,6 +3,10 @@ defmodule NextLevelWeekWeb.Schema do
   import_types NextLevelWeekWeb.Schema.Root
 
   query do
-    import_fields :root
+    import_fields :root_query
+  end
+
+  mutation do
+    import_fields :root_mutation
   end
 end
