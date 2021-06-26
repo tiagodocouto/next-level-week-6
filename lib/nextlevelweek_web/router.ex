@@ -10,6 +10,12 @@ defmodule NextLevelWeekWeb.Router do
 		get "/imc", Controllers.IMCController, :index
 	end
 
+	scope "/api" do
+		pipe_through :api
+		forward "/graphql", Absinthe.Plug, schema: NextLevelWeek.Schema
+		forward "/graphiql", Absinthe.Plug.GraphiQL, schema: NextLevelWeek.Schema
+	end
+
 	if Mix.env() in [:dev, :test] do
 		import Phoenix.LiveDashboard.Router
 		scope "/" do
