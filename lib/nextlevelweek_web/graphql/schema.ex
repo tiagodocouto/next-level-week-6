@@ -1,6 +1,6 @@
-defmodule NextLevelWeekWeb.Schema do
+defmodule NextLevelWeekWeb.GraphQL.Schema do
   use Absinthe.Schema
-  import_types NextLevelWeekWeb.Schema.Root
+  import_types NextLevelWeekWeb.GraphQL.Schema.Root
 
   query do
     import_fields :root_query

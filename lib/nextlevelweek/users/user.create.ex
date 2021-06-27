@@ -1,7 +1,7 @@
-defmodule NextLevelWeek.User.Create do
+defmodule NextLevelWeek.Schema.User.Create do
   def call(params) do
     params
-    |> NextLevelWeek.User.Schema.changeset()
+    |> NextLevelWeek.Schema.User.changeset()
     |> NextLevelWeek.Repo.insert()
   end
 end

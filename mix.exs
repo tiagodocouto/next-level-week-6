@@ -39,7 +39,8 @@ defmodule NextLevelWeek.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:absinthe, "~> 1.6.4"},
       {:absinthe_plug, "~> 1.5.8"},
-      {:git_hooks, "~> 0.6.2", only: [:dev], runtime: false}
+      {:git_hooks, "~> 0.6.2", only: [:dev], runtime: false},
+      {:crudry, "~> 2.4.0"}
     ]
   end
 

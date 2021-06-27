@@ -1,4 +1,4 @@
-defmodule NextLevelWeek.User.Schema do
+defmodule NextLevelWeek.Schema.User do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -6,6 +6,7 @@ defmodule NextLevelWeek.User.Schema do
   @fields [:name, :email, :password]
 
   schema "users" do
+    has_one :training, NextLevelWeek.Schema.Training
     field :name, :string
     field :email, :string
     field :password, :string
@@ -13,7 +14,7 @@ defmodule NextLevelWeek.User.Schema do
   end
 
   def changeset(params) do
-    %NextLevelWeek.User.Schema{}
+    %NextLevelWeek.Schema.User{}
     |> cast(params, @fields)
     |> validate_required(@fields)
     |> validate_length(:name, min: 2)

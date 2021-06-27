@@ -1,4 +1,4 @@
-defmodule NextLevelWeekWeb.Custom.UUID4 do
+defmodule NextLevelWeekWeb.GraphQL.Custom.UUID4 do
   use Absinthe.Schema.Notation
 
   scalar :uuid4, name: "UUID4" do

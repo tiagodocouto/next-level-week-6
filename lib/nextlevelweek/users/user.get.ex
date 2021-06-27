@@ -1,14 +1,14 @@
-defmodule NextLevelWeek.User.Get do
+defmodule NextLevelWeek.Schema.User.Get do
   import NextLevelWeek.Helpers.Guards
 
   def call(%{:email => email}) do
-    NextLevelWeek.User.Schema
+    NextLevelWeek.Schema.User
     |> NextLevelWeek.Repo.get_by(email: email)
     |> handle_response
   end
 
   def call(id) when is_uuid?(id) do
-    NextLevelWeek.User.Schema
+    NextLevelWeek.Schema.User
     |> NextLevelWeek.Repo.get(id)
     |> handle_response
   end
