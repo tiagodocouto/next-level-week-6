@@ -6,7 +6,7 @@ defmodule NextLevelWeek.Schema.User do
   @fields [:name, :email, :password]
 
   schema "users" do
-    has_one :training, NextLevelWeek.Schema.Training
+    has_many :trainings, NextLevelWeek.Schema.Training
     field :name, :string
     field :email, :string
     field :password, :string

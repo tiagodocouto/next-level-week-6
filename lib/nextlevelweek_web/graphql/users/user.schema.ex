@@ -3,7 +3,7 @@ defmodule NextLevelWeekWeb.GraphQL.Schema.User do
 
   @desc "User Schema"
   object :user do
-    field :training, :training
+    field :trainings, list_of(:training)
     field :id, non_null(:uuid4)
     field :name, non_null(:string)
     field :email, non_null(:string)
