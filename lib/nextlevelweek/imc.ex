@@ -4,7 +4,10 @@ defmodule NextLevelWeek.IMC do
   def calculate(%{"file" => path}),
     do: calculate_imc(load(path))
 
-  def calculate(_),
+  def calculate(_none),
+    do: calculate_imc(load("students.csv"))
+
+  def calculate(),
     do: calculate_imc(load("students.csv"))
 
   defp load(path),

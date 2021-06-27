@@ -1,5 +1,4 @@
 defmodule NextLevelWeekWeb.Controllers.IMCController do
-  @moduledoc false
   use NextLevelWeekWeb, :controller
 
   def index(connection, params) do
