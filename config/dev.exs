@@ -36,7 +36,7 @@ config :git_hooks,
       tasks: [
         {:cmd, "mix format"},
         {:cmd, "mix hex.outdated"},
-        {:cmd, "mix test --color"},
+        {:cmd, "mix test --color --cover"},
         {:cmd, "echo 'success!'"}
       ]
     ]
